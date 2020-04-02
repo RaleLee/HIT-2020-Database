@@ -1,0 +1,18 @@
+# 创建护士对应的患者名字视图
+Create View nurse_patient
+As Select nurse.name as nname, patient.pID as pID, patient.name as pname
+	From nurse, patient, care
+	Where care.nID=nurse.nID and care.bID=patient.bID;
+
+# 创建患者所在的科室视图
+Create View patient_department
+As Select patient.pID as pID, patient.name as pname, department.dname as dname
+	From patient, sickbed, department
+	Where patient.bID=sickbed.bID and department.deID=sickbed.deID;
+
+# 创建患者账单总额视图
+Create View patient_bill
+As Select patient.pID as pID, patient.name as name, Sum(price) as sum
+	From patient, bill
+	Where patient.pID=bill.pID
+	Group by bill.pID;

@@ -1,0 +1,10 @@
+# 单列索引
+Create Index patient_name On patient(name);
+Create Index bill_price On bill(price);
+# 唯一索引 一个患者只能有一张床，一张床上只能有一个患者
+Create Unique Index patient_bed On patient(bID);
+Create Unique Index patient_id On patient(pID);
+# 手术时间的索引
+Create Index surgery_date On surgery(date);
+# 账单时间的索引
+Create Index bill_date On bill(date);

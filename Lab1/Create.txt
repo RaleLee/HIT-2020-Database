@@ -1,0 +1,74 @@
+Create database hospital;
+use hospital
+Create Table Department(
+	deID INT NOT NULL,
+	dname varchar(20),
+	Primary key(deID));
+Create Table Doctor(
+	doID INT NOT NULL,
+	name varchar(20) NOT NULL,
+	sex char(2) NOT NULL,
+	age INT NOT NULL,
+	title varchar(20),
+	position varchar(20),
+	deID INT NOT NULL,
+	Primary key(doID),
+	foreign key(deID) references Department(deID));
+Create Table Nurse(
+	nID INT NOT NULL,
+	name varchar(20) NOT NULL,
+	sex char(2) NOT NULL,
+	age INT NOT NULL,
+	position varchar(20),
+	deID INT NOT NULL,
+	Primary key(nID),
+	foreign key(deID) references Department(deID));
+Create Table Sickbed(
+	bID INT NOT NULL,
+	deID INT NOT NULL,
+	Primary key(bID),
+	foreign key(deID) references Department(deID));
+Create Table Patient(
+	pID INT NOT NULL,
+	name varchar(20) NOT NULL,
+	sex char(2) NOT NULL,
+	age INT NOT NULL,
+	bID INT NOT NULL,
+	Primary key(pID),
+	foreign key(bID) references Sickbed(bID));
+Create Table Surgery(
+	sID INT NOT NULL,
+	type varchar(10),
+	date DATE,
+	doID INT NOT NULL,
+	pID INT NOT NULL,
+	Primary key(sID),
+	foreign key(doID) references Doctor(doID),
+	foreign key(pID) references Patient(pID));
+Create Table Diagnosis(
+	diaID INT NOT NULL,
+	content varchar(100) NOT NULL,
+	doID INT NOT NULL,
+	pID INT NOT NULL,
+	Primary key(diaID),
+	foreign key(doID) references Doctor(doID),
+	foreign key(pID) references Patient(pID));
+Create Table Bill(
+	biID INT NOT NULL,
+	price INT NOT NULL,
+	date DATE NOT NULL,
+	pID INT NOT NULL,
+	Primary key(biID),
+	foreign key(pID) references Patient(pID));
+Create Table Help(
+	sID INT NOT NULL,
+	nID INT NOT NULL,
+	Primary key(sID, nID),
+	foreign key(sID) references Surgery(sID),
+	foreign key(nID) references Nurse(nID));
+Create Table Care(
+	bID INT NOT NULL,
+	nID INT NOT NULL,
+	Primary key(bID, nID),
+	foreign key(bID) references Sickbed(bID),
+	foreign key(nID) references Nurse(nID));
