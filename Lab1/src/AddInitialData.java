@@ -2,9 +2,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,16 +11,9 @@ public class AddInitialData {
     private String fileType = ".csv";
     public static final String[] tableNames = {"Department", "Doctor", "Nurse", "Sickbed", "Patient", "Surgery", "Diagnosis", "Care", "Help", "Bill"};
 
-    public AddInitialData(){
-
-    }
+    public AddInitialData(){ }
 
     public boolean buildAddDataSql(String tableName, Connect connect) throws FileNotFoundException, SQLException {
-//        String truncate = "Truncate table "+ tableName + ";";
-//        Statement stmt = connect.getConn().createStatement();
-//        stmt.executeUpdate(truncate);
-//        stmt.close();
-
         File file = new File(pathpre + tableName+ fileType);
         Scanner sc = new Scanner(file);
         String line = sc.nextLine();
@@ -64,10 +54,6 @@ public class AddInitialData {
         }
         sc.close();
         return true;
-    }
-
-    public String[] getTableNames() {
-        return tableNames;
     }
 
     public static void main(String[] args) throws FileNotFoundException, SQLException {

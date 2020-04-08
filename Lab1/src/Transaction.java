@@ -48,7 +48,7 @@ public class Transaction extends GUI {
                 ret.add(tmp);
             }
             // 模拟患者交费用，账单金额清零
-            String sql = "Update bill set bill.price=0 where biID=10000003";
+            String sql = "Update bill set bill.price=0 where biID=10000003;";
             PreparedStatement pstmt = connect.getConn().prepareStatement(sql);
 
             int rs = pstmt.executeUpdate();
@@ -136,7 +136,7 @@ public class Transaction extends GUI {
                 outputLabel.getY() + outputLabel.getHeight() + yBlankLen, buttonWidth, buttonHeight);
         query1.addActionListener(actionEvent -> {
             inputTextArea
-                    .setText("Update bill set bill.price=0 where biID=10000003);");
+                    .setText("Update bill set bill.price=0 where biID=10000003;");
             inputTextArea.setFont(new Font("Times New Roman", Font.PLAIN, 30));
             outputTextArea
                     .setText(String.join("", exeTransaction(connect)));

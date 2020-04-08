@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9171f73b-3cf6-4cec-bf5c-a520689d54e6" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="9171f73b-3cf6-4cec-bf5c-a520689d54e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/431dbf8c-4e27-489e-ad51-bfeb207c7c11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/431dbf8c-4e27-489e-ad51-bfeb207c7c11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/META-INF/Lab1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddInitialData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddInitialData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NestedQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NestedQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transaction.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,38 +68,28 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ZbvwUj2rPxshiFQlfC9edwbqfO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-8.0.16.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.TriggerTest">
-    <configuration name="AddInitialData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AddInitialData" />
-      <module name="Lab1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Delete">
     <configuration name="Delete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Delete" />
       <module name="Lab1" />
@@ -119,13 +118,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ViewQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ViewQuery" />
+      <module name="Lab1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TriggerTest" />
         <item itemvalue="Application.Delete" />
+        <item itemvalue="Application.TriggerTest" />
         <item itemvalue="Application.Transaction" />
+        <item itemvalue="Application.ViewQuery" />
         <item itemvalue="Application.NestedQuery" />
-        <item itemvalue="Application.AddInitialData" />
       </list>
     </recent_temporary>
   </component>
@@ -148,10 +154,48 @@
       <workItem from="1585740066045" duration="1223000" />
       <workItem from="1585785323751" duration="6706000" />
       <workItem from="1585799883769" duration="4655000" />
+      <workItem from="1585835903950" duration="119000" />
+      <workItem from="1585890433401" duration="8191000" />
+      <workItem from="1586151104756" duration="4575000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom" timestamp="1586157842796">
+      <screen x="332" y="-1024" width="1280" height="994" />
+    </state>
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom/0.30.1920.1050/332.-1024.1280.994@332.-1024.1280.994" timestamp="1586157842796" />
+    <state width="1237" height="178" key="GridCell.Tab.0.center" timestamp="1586157842796">
+      <screen x="332" y="-1024" width="1280" height="994" />
+    </state>
+    <state width="1237" height="178" key="GridCell.Tab.0.center/0.30.1920.1050/332.-1024.1280.994@332.-1024.1280.994" timestamp="1586157842796" />
+    <state width="1237" height="178" key="GridCell.Tab.0.left" timestamp="1586157842795">
+      <screen x="332" y="-1024" width="1280" height="994" />
+    </state>
+    <state width="1237" height="178" key="GridCell.Tab.0.left/0.30.1920.1050/332.-1024.1280.994@332.-1024.1280.994" timestamp="1586157842795" />
+    <state width="1237" height="178" key="GridCell.Tab.0.right" timestamp="1586157842796">
+      <screen x="332" y="-1024" width="1280" height="994" />
+    </state>
+    <state width="1237" height="178" key="GridCell.Tab.0.right/0.30.1920.1050/332.-1024.1280.994@332.-1024.1280.994" timestamp="1586157842796" />
+    <state x="664" y="-700" key="com.intellij.ide.util.TipDialog" timestamp="1586345287778">
+      <screen x="332" y="-1024" width="1280" height="994" />
+    </state>
+    <state x="664" y="-700" key="com.intellij.ide.util.TipDialog/0.30.1920.1050/332.-1024.1280.994@332.-1024.1280.994" timestamp="1586345287778" />
   </component>
 </project>

@@ -24,7 +24,6 @@ public class Insert extends GUI {
         buildSQL();
         // 创建 JFrame 实例
         JFrame frame = new JFrame(title);
-//        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setBounds(40, 40, 1024, 768);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -43,7 +42,7 @@ public class Insert extends GUI {
                 "values(500030,'ads','M',22,1046);";
         // 插入某些不该为空值的报错
         String sql2 =  "Insert into patient(pID,sex,age,bID)\n" +
-                "values (500030,'M',22,1046);";
+                "values (500031,'M',22,1046);";
         // 插入不存在的外键报错
         String sql3 = "Insert into patient\n" +
                 "values(500031,'ads','M',22,1100);";
@@ -123,7 +122,7 @@ public class Insert extends GUI {
         panel.add(outputScrollPane);
 
 
-        JButton query1 = new JButton("Query1");
+        JButton query1 = new JButton("Insert1");
         query1.setFont(buttonFont);
         query1.setBounds(xBlankLen,
                 outputLabel.getY() + outputLabel.getHeight() + yBlankLen, buttonWidth, buttonHeight);
@@ -137,7 +136,7 @@ public class Insert extends GUI {
         });
         panel.add(query1);
 
-        JButton query2 = new JButton("Query2");
+        JButton query2 = new JButton("Insert2");
         query2.setFont(buttonFont);
         query2
                 .setBounds(xBlankLen + query1.getX() + query1.getWidth(),
@@ -152,7 +151,7 @@ public class Insert extends GUI {
         });
         panel.add(query2);
 
-        JButton query3 = new JButton("Query3");
+        JButton query3 = new JButton("Insert3");
         query3.setFont(buttonFont);
         query3
                 .setBounds(xBlankLen + query2.getX() + query2.getWidth(),
@@ -167,7 +166,7 @@ public class Insert extends GUI {
         });
         panel.add(query3);
 
-        JButton query4 = new JButton("自定义查询");
+        JButton query4 = new JButton("自定义插入");
         query4.setFont(buttonFont);
         query4
                 .setBounds(xBlankLen + query3.getX() + query3.getWidth(),

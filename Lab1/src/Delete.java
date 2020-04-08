@@ -40,8 +40,8 @@ public class Delete extends GUI {
         String sql1 = "Delete From sickbed where bID=1001;";
         // 正常删除
         String sql2 = "Delete From sickbed where bID=1049;";
-        //
-        String sql3 = "Delete From patient where pID like 'ac';";
+        // 正常删除
+        String sql3 = "Delete From diagnosis where content like '%a%';";
         query.add(sql1);
         query.add(sql2);
         query.add(sql3);

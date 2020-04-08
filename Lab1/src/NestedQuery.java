@@ -33,12 +33,6 @@ public class NestedQuery extends GUI {
         placeComponents(panel, connect);
         // 设置界面可见
         frame.setVisible(true);
-//        frame.addWindowListener(new WindowAdapter() {
-//            @Override
-//            public void windowClosed(WindowEvent e) {
-//
-//            }
-//        });
     }
 
     private void buildSQL(){
