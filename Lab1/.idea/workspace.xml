@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9171f73b-3cf6-4cec-bf5c-a520689d54e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/431dbf8c-4e27-489e-ad51-bfeb207c7c11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/431dbf8c-4e27-489e-ad51-bfeb207c7c11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab1/META-INF/Lab1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddInitialData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddInitialData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Insert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NestedQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NestedQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transaction.java" afterDir="false" />
-    </list>
+    <list default="true" id="9171f73b-3cf6-4cec-bf5c-a520689d54e6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,6 +147,7 @@
       <workItem from="1585835903950" duration="119000" />
       <workItem from="1585890433401" duration="8191000" />
       <workItem from="1586151104756" duration="4575000" />
+      <workItem from="1586345283907" duration="76000" />
     </task>
     <servers />
   </component>
