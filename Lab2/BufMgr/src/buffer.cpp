@@ -35,6 +35,7 @@ BufMgr::BufMgr(std::uint32_t bufs)
 }
 
 BufMgr::~BufMgr() {
+  // 析构函数 写回全部的valid dirty的页面
   // To check if the buffer is a dirty page
   for(std::uint32_t i = 0; i < numBufs; i++)
   {
@@ -71,7 +72,7 @@ void BufMgr::allocBuf(FrameId & frame)
     advanceClock();
     BufDesc* cur = &bufDescTable[clockHand];
 
-    // 时针走过一圈，检查是否有pinned页面出现
+    // 时针走过一圈，检查是否有unpinned页面出现
     if(clockHand == st)
     {
       if(!not_pinned)
